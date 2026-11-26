@@ -11,12 +11,14 @@ const about = document.querySelector('.about');
 const aboutText = document.querySelector('.about__text');
 const aboutStatus = document.querySelector('.about__status');
 const aboutRetry = document.querySelector('.about__retry');
+const aboutSkeleton = document.querySelector('.about__skeleton');
 let aboutContent = null;
 let aboutLoading = false;
+let aboutHasRequested = false;
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const pages = new Map(menuButtons.map((button) => [button.dataset.page, button.querySelector('.console__label').textContent]));
-const savedPage = window.history.state?.portfolioPage;
-let activePage = pages.has(savedPage) ? savedPage : 'menu';
+// Each document load starts the intro afresh, regardless of the previous view.
+let activePage = 'menu';
 let lastPage = activePage;
 const ease = 'cubic-bezier(0.22, 1, 0.36, 1)';
 let animations = [];
@@ -60,8 +62,12 @@ function renderPage(focus = false) {
 async function loadAboutContent() {
   if (aboutContent || aboutLoading) return;
   aboutLoading = true;
+  const minimumDelay = aboutHasRequested ? Promise.resolve() : new Promise((resolve) => setTimeout(resolve, 1000));
+  aboutHasRequested = true;
+  aboutSkeleton.hidden = false;
+  aboutText.setAttribute('aria-busy', 'true');
   aboutStatus.hidden = false;
-  aboutStatus.textContent = 'Loading introduction…';
+  aboutStatus.textContent = 'Putting the story together…';
   aboutRetry.hidden = true;
   try {
     const response = await fetch('config/aboutme.content.json');
@@ -72,6 +78,8 @@ async function loadAboutContent() {
         !content.paragraphs.every((text) => typeof text === 'string')) {
       throw new Error('Invalid About Me content');
     }
+    // Fetch immediately; keep the first skeleton visible for at least one second.
+    await minimumDelay;
     document.querySelector('.about__intro').textContent = content.introduction;
     document.querySelector('.about__portrait img').alt = content.photoAlt;
     const paragraphs = content.paragraphs.map((text) => {
@@ -105,11 +113,20 @@ async function loadAboutContent() {
     if (activePage === 'about-me') {
       chapterTitle.textContent = content.title;
       document.title = `${content.title} — miguel buccat`;
+      if (!reducedMotion.matches && Element.prototype.animate) {
+        routeAnimations.push(aboutText.animate([
+          { opacity: 0, transform: 'translateY(8px)' },
+          { opacity: 1, transform: 'translateY(0)' },
+        ], { duration: 380, easing: ease }));
+      }
     }
   } catch {
+    await minimumDelay;
     aboutStatus.textContent = 'The introduction couldn’t be loaded. Please try again.';
     aboutRetry.hidden = false;
   } finally {
+    aboutSkeleton.hidden = true;
+    aboutText.setAttribute('aria-busy', 'false');
     aboutLoading = false;
   }
 }

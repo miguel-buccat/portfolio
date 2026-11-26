@@ -191,6 +191,19 @@ button:focus-visible { outline: 3px solid var(--color-text); outline-offset: 5px
 .about__portrait-stroke { stroke: var(--color-panel-text); stroke-width: 3; stroke-linecap: round; }
 .about__portrait-dot { fill: var(--color-panel-text); }
 .about__copy { min-width: 0; grid-column: 1; grid-row: 1; }
+.about__skeleton { display: grid; gap: 24px; animation: about-pulse 1.4s ease-in-out infinite; }
+.about__skeleton-heading, .about__skeleton-lines i, .about__skeleton-socials i { display: block; background: var(--color-panel-hover); border-radius: 100px; }
+.about__skeleton-heading { width: 68%; height: clamp(36px, 4vw, 48px); }
+.about__skeleton-lines { display: grid; gap: 12px; }
+.about__skeleton-lines i { height: 14px; }
+.about__skeleton-lines i:nth-child(2) { width: 92%; }
+.about__skeleton-lines i:last-child { width: 72%; }
+.about__skeleton-lines:nth-child(3) i:last-child { width: 54%; }
+.about__skeleton-socials { display: flex; gap: 12px; }
+.about__skeleton-socials i { width: 48px; height: 48px; flex: 0 1 48px; aspect-ratio: 1; }
+.about__skeleton:not([hidden]) + .about__status { margin: 18px 0 0; font-size: 14px; letter-spacing: 0.6px; }
+@keyframes about-pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .about__skeleton { animation: none; } }
 .about__intro { margin: 0 0 20px; font-size: clamp(32px, 4vw, 46px); line-height: 1.12; font-weight: 400; letter-spacing: -0.6px; overflow-wrap: anywhere; }
 .about__paragraphs p, .about__status { margin: 0 0 16px; font-size: 17px; line-height: 1.7; letter-spacing: 0.15px; overflow-wrap: anywhere; }
 .about__paragraphs p:last-child { margin-bottom: 0; }
