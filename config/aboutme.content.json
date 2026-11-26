@@ -1,0 +1,16 @@
+{
+  "title": "About Me",
+  "introduction": "Hi, I'm Miguel!",
+  "paragraphs": [
+    "Hello there! I'm Miguel R. Buccat — you can call me Migs! I am a Filipino Computer Science major currently studying at CIIT College of Innovation and Integrated Technology in Kamuning, Quezon City.",
+    "I am a curious mind with an unhealthy addiction to seeking out new things to learn — even beyond technology. I am most curious about the world around me, and the prospect of how technology can make it a better place for all.",
+    "I am a firm believer that skills and talents are better used, not to enrich oneself, but to enrich the lives of others."
+  ],
+  "socialLinks": {
+    "github": "",
+    "facebook": "",
+    "instagram": "",
+    "linkedin": ""
+  },
+  "photoAlt": "Miguel Buccat leaning on a stool against a light green background"
+}

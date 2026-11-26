@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#8c52ff">
+    <title>miguel buccat</title>
+    <link rel="preload" href="https://fonts.cdnfonts.com/s/19355/GlacialIndifference-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="prelude" aria-label="Portfolio introduction">
+      <p class="sr-only">changemaker. disrupter. innovator. bold. leader. courageous</p>
+      <div class="prelude__words" aria-hidden="true">
+        <span class="prelude__word">changemaker.</span>
+        <span class="prelude__word">disrupter.</span>
+        <span class="prelude__word">innovator.</span>
+        <span class="prelude__word">bold.</span>
+        <span class="prelude__word">leader.</span>
+        <span class="prelude__word">courageous</span>
+      </div>
+    </div>
+    <main class="portfolio" hidden>
+      <header class="identity">
+        <button type="button" class="identity__link" data-page="menu" aria-label="Miguel Buccat — menu">
+          <img class="identity__logo" src="logo.svg" alt="Miguel Buccat" width="1440" height="810">
+        </button>
+      </header>
+      <div class="workspace">
+        <nav class="console" aria-label="Portfolio chapters">
+          <button type="button" class="console__item" data-page="about-me"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg><span class="console__label">About Me</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item" data-page="educational-background"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m2 9 10-5 10 5-10 5L2 9Z"/><path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7"/></svg><span class="console__label">Educational Background</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item" data-page="strengths-weaknesses"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v18M5 21h14M4 7h16M6 7l-4 8h8L6 7Zm12 0-4 8h8l-4-8Z"/></svg><span class="console__label">Strengths &amp; Weaknesses</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item" data-page="values-principles"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></svg><span class="console__label">Values &amp; Principles</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item" data-page="vision-mission"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></svg><span class="console__label">Vision &amp; Mission</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item" data-page="achievements-milestones"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3h8v6a4 4 0 0 1-8 0V3ZM8 5H4v3a4 4 0 0 0 4 4m8-7h4v3a4 4 0 0 1-4 4M12 13v5m-5 3v-3h10v3H7Z"/></svg><span class="console__label">Achievements &amp; Milestones</span><span class="console__cursor" aria-hidden="true">_</span></button>
+          <button type="button" class="console__item console__item--wide" data-page="best-works"><svg class="console__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 4 4-6 5 7"/></svg><span class="console__label">Best Works</span><span class="console__cursor" aria-hidden="true">_</span></button>
+        </nav>
+        <section class="chapter" aria-labelledby="chapter-title" hidden>
+          <button type="button" class="chapter__back" data-page="menu">[ Back to menu ]</button>
+          <h1 id="chapter-title" tabindex="-1"></h1>
+          <div class="about" hidden>
+            <div class="about__portrait">
+              <img src="assets/me.jpg" alt="Portrait of Miguel Buccat" width="698" height="698" loading="lazy" decoding="async">
+              <svg class="about__portrait-doodles" viewBox="0 0 300 375" fill="none" aria-hidden="true" focusable="false">
+                <path class="about__portrait-orbit" d="M37 78C-7 124 4 244 40 294M264 105c35 42 41 119 14 165"/>
+                <path class="about__portrait-spark" d="m255 16 5 17 17 5-17 5-5 17-5-17-17-5 17-5Z"/>
+                <path class="about__portrait-spark about__portrait-spark--small" d="m26 288 4 12 12 4-12 4-4 12-4-12-12-4 12-4Z"/>
+                <path class="about__portrait-stroke" d="m24 47-9-12m27 4-2-15M12 65 1 61"/>
+                <circle class="about__portrait-dot" cx="283" cy="289" r="6"/>
+                <circle class="about__portrait-dot" cx="56" cy="17" r="4"/>
+              </svg>
+            </div>
+            <div class="about__copy">
+              <p class="about__status" role="status">Loading introduction…</p>
+              <button type="button" class="about__retry" hidden>Try again</button>
+              <div class="about__text" hidden>
+                <h2 class="about__intro"></h2>
+                <div class="about__paragraphs"></div>
+                <nav class="about__socials" aria-label="Social profiles">
+                  <a class="about__social" data-social="github" aria-label="GitHub" aria-disabled="true" role="link" tabindex="0">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .75a11.25 11.25 0 0 0-3.56 21.92c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 .1.92 2.42 3.28 1.72.1-.73.39-1.23.71-1.51-2.5-.28-5.13-1.25-5.13-5.56 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.1 1.15a10.8 10.8 0 0 1 5.64 0c2.15-1.45 3.1-1.15 3.1-1.15.61 1.55.23 2.69.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.32-2.63 5.27-5.14 5.55.4.35.76 1.03.76 2.08v3.33c0 .3.2.65.78.54A11.25 11.25 0 0 0 12 .75Z"/></svg>
+                  </a>
+                  <a class="about__social" data-social="facebook" aria-label="Facebook" aria-disabled="true" role="link" tabindex="0">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.51 1.5-3.9 3.77-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.45 2.89h-2.33v6.99A10 10 0 0 0 22 12Z"/></svg>
+                  </a>
+                  <a class="about__social" data-social="instagram" aria-label="Instagram" aria-disabled="true" role="link" tabindex="0">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  </a>
+                  <a class="about__social" data-social="linkedin" aria-label="LinkedIn" aria-disabled="true" role="link" tabindex="0">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.75H4.96V9.2h2.97v9.55ZM6.45 7.9a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.3 10.85h-2.96v-4.64c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.72H9.49V9.2h2.84v1.3h.04c.4-.75 1.36-1.54 2.8-1.54 3 0 3.57 1.98 3.57 4.55v5.24Z"/></svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
