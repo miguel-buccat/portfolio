@@ -1,0 +1,47 @@
+{
+  "title": "Educational Background",
+  "institutions": [
+    {
+      "institution": "CIIT College of Innovation and Integrated Technology",
+      "level": "College",
+      "period": "2026 — Present",
+      "program": "Bachelor of Science in Computer Science with specialization in Artificial Intelligence and Cloud Computing",
+      "description": "My current journey in the heart of Kamuning, Quezon City! Pursuing higher education in a college like CIIT is certainly one of the plot twists of my life. I am excited to further my journey in this institution, make new friends, and learn a lot of new things from the very best around me.",
+      "logo": "assets/ciit-logo.png",
+      "logoAlt": "CIIT Logo",
+      "organizations": [
+        { "name": "Safezone", "positions": ["Member"] }
+      ]
+    },
+    {
+      "institution": "De La Salle University - Dasmariñas",
+      "level": "Senior High School",
+      "period": "2024 - 2026",
+      "program": "TVL-ICT-Animation",
+      "description": "The most transformative 2 years of my life. This is where I really learned what it means to excel beyond the classroom and grow as a leader. My time here in DLSU-D will always be remembered as a time of growth for me as I certainly will not be who I am today without the experiences and lessons I gained from this institution.",
+      "logo": "assets/dlsud-logo.png",
+      "logoAlt": "DLSU-D Logo",
+      "organizations": [
+        { "name": "Lasallian Envoys for Advocacy and Diplomacy", "positions": ["Founder"] },
+        { "name": "The Lasallian Auxilium - Red Cross Youth", "positions": ["President", "Executive Secretary", "Resource & Logistics Committee Member"] },
+        { "name": "Animo SPEAR", "positions": ["Robotics Committee Member"] },
+        { "name": "Lasallian Debate Society", "positions": ["Research Committee Member"] },
+        { "name": "Lasallian Youth Corps", "positions": ["Ministry of the Word Member"] },
+        { "name": "Search-In Dasmariñas", "positions": ["Circle 18", "Activities Head, Community Core"] }
+      ]
+    },
+    {
+      "institution": "Oxford Louise Academy of Dasma., Inc.",
+      "level": "Junior High School",
+      "period": "2020 — 2024",
+      "program": "",
+      "description": "Where my high school journey began! I am grateful for the experiences and lessons I gained during my time at OLA, with it building the foundations of who I am as a student and as a person.",
+      "logo": "assets/ola-logo.png",
+      "logoAlt": "OLA Logo",
+      "organizations": [
+        { "name": "Supreme Student Council", "positions": ["Treasurer", "Public Information Officer"] },
+        { "name": "Novelia Literature Club", "positions": ["Vice President"] }
+      ]
+    }
+  ]
+}

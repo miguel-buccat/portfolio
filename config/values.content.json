@@ -1,0 +1,23 @@
+{
+  "title": "Values & Principles",
+  "statement": "The future I hope for begins with the choices I make.",
+  "introduction": "These are the principles I strive to bring to the way I learn, create, and treat other people.",
+  "items": [
+    {
+      "title": "Dignity, without conditions",
+      "description": "Every person deserves respect, whatever their background or circumstances. I want to listen before I judge and remember the people whose experiences differ from my own. Each person counts."
+    },
+    {
+      "title": "Integrity in the everyday",
+      "description": "My actions should stand behind my words. That means being honest about what I know, taking responsibility when I fall short, and choosing what is right even when it is the most inconvenient."
+    },
+    {
+      "title": "Opportunity worth sharing",
+      "description": "The doors that open for me should help me open doors for others. My talents, skills, and everything around me should always benefit everyone in pursuit of the common good of all."
+    },
+    {
+      "title": "Growth with a purpose",
+      "description": "Learning carries a responsibility beyond personal success. I strive to become someone capable enough that I may be able to dream for those who can not dream for themselves."
+    }
+  ]
+}

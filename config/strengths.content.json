@@ -1,0 +1,21 @@
+{
+  "title": "Strengths & Weaknesses",
+  "statement": "Knowing myself is part of moving forward.",
+  "introduction": "A place to put pieces of my own being.",
+  "strengths": {
+    "heading": "Strengths",
+    "items": [
+      { "title": "Kindness", "description": "It is easy to not be kind in today's world — I choose to be kind anyway. We are all going through our own struggles, challenges, and battles that we do not let others know of — we all need kindness to be done unto us. I believe that need should be reflected in how we act towards others." },
+      { "title": "Leadership", "description": "Direction is important. Without direction, stagnation occurs and everything falls apart. I am not someone who is keen in leadership, but rather someone who merely possesses a drive to stand up — to contribute my own talents and skills, ensuring the fulfillment of an objective." },
+      { "title": "Curiosity", "description": "Curiosity drives me forward; curiosity sparks a drive within me to learn about the intricate details in life that most overlook. This enables me to possess perspectives that come from different angles and perspectives." }
+    ]
+  },
+  "weaknesses": {
+    "heading": "Weaknesses",
+    "items": [
+      { "title": "TBD", "description": "TBD" },
+      { "title": "TBD", "description": "TBD" },
+      { "title": "TBD", "description": "TBD" }
+    ]
+  }
+}

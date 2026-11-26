@@ -1,0 +1,35 @@
+{
+  "title": "Achievements & Milestones",
+  "achievements": [
+    {
+      "title": "Award for Outstanding Performance in ICT",
+      "category": "Academic award",
+      "institution": "De La Salle University - Dasmarinas",
+      "level": "Senior High School",
+      "year": "2026",
+      "icon": "medal",
+      "color": "gold",
+      "description": ""
+    },
+    {
+      "title": "2nd Runner-Up, Line Following V3",
+      "category": "Extracurricular Award",
+      "institution": "Robolution 4 Regional",
+      "level": "",
+      "year": "2025",
+      "icon": "trophy",
+      "color": "mint",
+      "description": ""
+    },
+    {
+      "title": "Entry Level Web Development",
+      "category": "Certification",
+      "institution": "Erovoutika",
+      "level": "",
+      "year": "2026",
+      "icon": "medal",
+      "color": "rose",
+      "description": "Awarded with High Distinction"
+    }
+  ]
+}
